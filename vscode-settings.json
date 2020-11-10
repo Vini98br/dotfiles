@@ -1,0 +1,131 @@
+{
+    // Define o tema do VSCode
+    "workbench.colorTheme": "Dracula",
+  
+    "conventionalCommits.scopes": [
+      "seeds",
+      "migrations",
+      "controllers",
+      "models",
+      "scripts",
+      "routes",
+      "lint",
+      "readme",
+      "api"
+  ],
+    "conventionalCommits.emojiFormat": "emoji",
+    "conventionalCommits.autoCommit": false,
+
+    // Configura tamanho e família da fonte
+    "editor.fontSize": 15,
+    "editor.lineHeight": 24,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    
+    // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+    "editor.rulers": [100, 140],
+    "editor.formatOnSave": false,
+  
+    "eslint.packageManager": "npm",
+    
+    "[javascript]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      }
+    },
+    "[typescript]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      }
+    },
+    "[typescriptreact]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      }
+    },
+  
+    "files.associations": {
+      ".sequelizerc": "javascript",
+      ".stylelintrc": "json",
+      ".prettierrc": "json"
+    },
+  
+    // Aplica um sinal visual na esquerda da linha selecionada
+    "editor.renderLineHighlight": "gutter",
+  
+    // Aumenta a fonte do terminal
+    "terminal.integrated.fontSize": 14,
+  
+    // Define o tema dos ícones na sidebar
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": true,
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx",
+    },
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "breadcrumbs.enabled": true,
+    "git.enableSmartCommit": true,
+    "editor.parameterHints.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "explorer.confirmDragAndDrop": false,
+    // "liveshare.featureSet": "insiders",
+    "explorer.confirmDelete": false,
+  
+    "typescript.tsserver.log": "verbose",
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.sideBar.location": "left",
+    "tabnine.experimentalAutoImports": true,
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "material-icon-theme.folders.associations": {
+      "infra": "app",
+      "entities": "class",
+      "schemas": "class",
+      "typeorm": "database",
+      "repositories": "mappings",
+      "http": "container",
+      "migrations": "tools",
+      "seeders": "generator",
+      "modules": "components",
+      "implementations": "core",
+      "dtos": "typescript",
+      "fakes": "mock",
+      "websockets": "pipe",
+      "protos": "pipe",
+      "grpc": "pipe"
+    },
+  
+    "material-icon-theme.files.associations": {
+      "ormconfig.json": "database",
+      "tsconfig.json": "tune",
+      "*.proto": "3d"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+  }
