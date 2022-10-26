@@ -18,12 +18,9 @@
     "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "editor.rulers": [100, 140], // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.renderLineHighlight": "gutter", // Aplica um sinal visual na esquerda da linha selecionada
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    
+
     // Integrated Terminal
     "terminal.integrated.shell.linux": "/bin/zsh",
     "terminal.integrated.tabs.enabled": false,
@@ -51,6 +48,7 @@
     "eslint.validate": [
       "javascript",
       "javascriptreact",
+      "html",
       "typescript",
       "typescriptreact"
     ],
@@ -60,10 +58,16 @@
     "javascript.suggest.autoImports": true,
     "javascript.updateImportsOnFileMove.enabled": "never",
     "[javascript]": {
-      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascriptreact]": {
-      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // TypeScript
@@ -71,10 +75,16 @@
     "typescript.tsserver.log": "verbose",
     "typescript.suggest.autoImports": true,
     "[typescript]": {
-      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      },
+      "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[typescriptreact]": {
-      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false,
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // CSS
